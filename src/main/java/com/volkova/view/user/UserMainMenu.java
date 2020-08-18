@@ -1,5 +1,6 @@
 package com.volkova.view.user;
 
+import com.volkova.model.ShoppingCart;
 import com.volkova.view.LoginMenu;
 import com.volkova.view.Menu;
 
@@ -10,8 +11,8 @@ public class UserMainMenu implements Menu {
     private static final UserMainMenu userMainMenu = new UserMainMenu();
     private static final UserOrderMenu userOrderMenu = UserOrderMenu.getInstance();
     private static final UserProductMenu userProductMenu = UserProductMenu.getInstance();
-    private final String[] userMainMenuList = {"1.ProductMenu", "2.OrderMenu", "0. PreviousMenu"};
-
+    private final String[] userMainMenuList = {"1.ProductMenu", "2.OrderMenu", "3.Shopping Cart","0. PreviousMenu"};
+    private final ShoppingCartMenu shoppingCartMenu = new ShoppingCartMenu();
     public static UserMainMenu getInstance() {
         return userMainMenu;
     }
@@ -26,6 +27,9 @@ public class UserMainMenu implements Menu {
                     break;
                 case "2":
                     userOrderMenu.show();
+                    break;
+                case "3":
+                    shoppingCartMenu.show();
                     break;
                 default:
                     incorrectInput();
