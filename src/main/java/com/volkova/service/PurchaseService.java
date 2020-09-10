@@ -8,5 +8,5 @@ import java.util.Map;
 public interface PurchaseService {
     void createPurchase(Map<Product, Integer> positionProduct);
 
-    public Purchase showPurchase(Purchase purchase);
+    Purchase showPurchase(Purchase purchase);
 }

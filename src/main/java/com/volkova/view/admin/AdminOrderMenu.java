@@ -5,6 +5,9 @@ import com.volkova.model.OrderStatus;
 import com.volkova.model.Product;
 import com.volkova.model.User;
 import com.volkova.service.*;
+import com.volkova.service.impl.OrderServiceImpl;
+import com.volkova.service.impl.ProductServiceImpl;
+import com.volkova.service.impl.UserServiceImpl;
 import com.volkova.view.Menu;
 
 import java.io.BufferedReader;

@@ -2,6 +2,7 @@ package com.volkova.view.admin;
 
 import com.volkova.model.Product;
 import com.volkova.service.*;
+import com.volkova.service.impl.ProductServiceImpl;
 import com.volkova.view.Menu;
 
 import java.io.BufferedReader;

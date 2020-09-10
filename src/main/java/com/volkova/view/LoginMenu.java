@@ -3,7 +3,7 @@ package com.volkova.view;
 import com.volkova.model.User;
 import com.volkova.model.UserRole;
 import com.volkova.service.UserService;
-import com.volkova.service.UserServiceImpl;
+import com.volkova.service.impl.UserServiceImpl;
 import com.volkova.view.admin.AdminMainMenu;
 import com.volkova.view.user.UserMainMenu;
 
